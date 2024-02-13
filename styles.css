@@ -187,6 +187,7 @@ body {
 }
 
 .About-me-content{
+  margin-top: 120px;
   height: 20vh;
   display: flex;
   align-items: center;
@@ -237,7 +238,7 @@ body {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  opacity: 0.15;
+  opacity: 0.05;
   
 }
 
@@ -246,6 +247,63 @@ body {
   /* flex-basis: 33.33%; for three blocks per row */
   box-sizing: border-box;
   padding: 10px;
+}
+
+.Experience {
+  height: 100vh;
+  padding: 0 10%;
+  justify-content: space-between;
+  position: relative;
+  color: #ffff;
+}
+.Experience hr{
+  margin-bottom: 80px;
+}
+
+.Experience::before {
+  content: "";
+  position: absolute;
+  background: url('experience.png') no-repeat;
+  background-size: cover;
+  background-position: center;    
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.08;
+  
+}
+
+.Experience h1 {
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 1.2;
+  align-items: center;
+  padding: 70px;
+  opacity: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.Column {
+  float: left;
+  padding-right: 20px;
+  /*width: 33.33%;*/
+}
+.flex-container {
+  display: flex;
+  
+}
+
+/* Clear floats after the columns */
+.Row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.left {
+  width: 25%;
 }
 
 .Education {
@@ -269,7 +327,7 @@ body {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  opacity: 0.05;
+  opacity: 0.01;
   
 }
 
